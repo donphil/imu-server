@@ -22,6 +22,8 @@
                             i2c_smbus_read_byte_data(int,int);
                             i2c_smbus_write_byte_data(int , int , int );
 
+    This class provides the direct interaction with the IMU sensor.
+
  *  class BerryIMU:
  *  enableIMU() : activates i2c protocol and enables all sensors with the parameters set in
  *                  _accState, _magState, _gyrState, _configState

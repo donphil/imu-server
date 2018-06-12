@@ -1,3 +1,8 @@
+/* This file is ignored when compiled on a linux machine.
+ * It provides the functions that are used to communicate with the IMU and
+ * allow this code to compile for debugging purposes on a computer
+ * without the proper IMU libraries. */
+
 #ifndef I2CDUMMY_H
 #define I2CDUMMY_H
 

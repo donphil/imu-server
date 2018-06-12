@@ -3,6 +3,8 @@
 
 #include <QDataStream>
 
+// Simple data containers for sensor readings. Vector2D and Vector4D with serializing capabilities.
+
 class Vector2D {
 public:
     quint64 time=0;

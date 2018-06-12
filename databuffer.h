@@ -6,6 +6,7 @@
 #include <QDebug>
 #include "vectors.h"
 
+// This class provides storage and serializing capabilities for the sensor readings
 class DataBuffer {  // the last point stores the time
 public:
     DataBuffer& moveFirstFrom(DataBuffer&rhs) { // moves the first element of the buffer

@@ -14,7 +14,8 @@
 QT_FORWARD_DECLARE_CLASS(QWebSocketServer)
 QT_FORWARD_DECLARE_CLASS(QWebSocket)
 
-
+// This class provides the worker thread that pulls data and sends it via TCP
+// It handles all interactions with the sensor via its member, the BerryIMU object m_imu.
 class IMUThread : public QThread
 {
     Q_OBJECT
@@ -56,6 +57,7 @@ private:
     bool m_read_pressure    = false;
 };
 
+// This class is the data server. It handles communication with the client and updates the GUI
 class SensorDataTcpServer : public QObject
 {
     Q_OBJECT
